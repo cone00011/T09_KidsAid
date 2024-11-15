@@ -1,5 +1,43 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: "";
+}
 
+h2 {
+  font-family: var(--Primær-H2-Font);
+}
+
+h3 {
+  font-family: var(--Primær-H3-Font);
+}
+
+p {
+  font-family: var(--Primær-Brødtekst-Font);
+  line-height: var(--LineHeight);
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  /* Font Family */
+  --Primær-H2-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --Primær-H3-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --Primær-Brødtekst-Font: "Courier New", Courier, monospace;
+
+  /* Font Size */
+  --Primær-H2-Size: 90px;
+  --Primær-H3-Size: 70px;
+  --Primær-Brødtekst-Size: 32px;
+
+  /* Colors */
+  --Black: rgba(0, 0, 0, 1);
+
+  /* Other */
+  --LineHeight: ;
+  --BorderRadius: ;
+  --Padding: ;
+}
