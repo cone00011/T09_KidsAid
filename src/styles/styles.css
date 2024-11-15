@@ -24,9 +24,9 @@ img {
 
 :root {
   /* Font Family */
-  --Primær-H2-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  --Primær-H3-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  --Primær-Brødtekst-Font: "Courier New", Courier, monospace;
+  --Primær-H2-Font: "Bebas Neue", serif;
+  --Primær-H3-Font: "Bebas Neue", serif;
+  --Primær-Brødtekst-Font: "Roboto Condensed", sans-serif;
 
   /* Font Size */
   --Primær-H2-Size: 90px;
