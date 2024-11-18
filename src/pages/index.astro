@@ -1,15 +1,14 @@
 ---
-import "../pages/layouts/Mainlayout.astro"
+import Mainlayout from "./layouts/Mainlayout.astro";
 import Herosection from '../komponenter/Herosection.astro';
-import Infotekst2 from "../komponenter/Infotekst2.astro";
+import Infotekst2 from "../komponenter/Infotekst2.astro";	
 
 ---
 
-
-
+<Mainlayout>
 	<Herosection />
-
-
+	<Infotekst2 />
+</Mainlayout>
 
 <style>
 	h2{
