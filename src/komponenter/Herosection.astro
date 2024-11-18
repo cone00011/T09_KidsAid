@@ -1,31 +1,114 @@
-
 <section>
-    <div class="image-container">
-      <img src="../../public/elementer/magiens_venner.png" alt="magiensvenner">
-    </div>
+  <div class="magiens_venner_h1">
+    <img src="../../public/elementer/magiens_venner.png" alt="magiensvenner">
+  </div>
 
-    <div class="herosection_balloner">
-      <img src="../../public/elementer/gul_hund.png" alt="gul_hund">
-      <img src="../../public/elementer/pink_stjerne.png" alt="pink_stjerne">
-      <img src="../../public/elementer/bla_hund.png" alt="bla_hund">
-      <img src="../../public/elementer/gron_ballon.png" alt="gron_ballon">
-      <img src="../../public/elementer/bla_stjerne.png" alt="bla_stjerne">
-      <img src="../../public/elementer/gron_stjerne.png" alt="gron_stjerne">
-      <img src="../../public/elementer/gron_hund.png" alt="gron_hund">
-      <img src="../../public/elementer/gul_ballon.png" alt="gul_ballon">
-      <img src="../../public/elementer/lyse_gron_stjerne.png" alt="lyse_gron_stjerne">
-      <img src="../../public/elementer/pink_hund.png" alt="pink_hund">
-      <img src="../../public/elementer/bla_ballon.png" alt="bla_ballon">
-    </div>
-  </section>
+  <div class="herosection_balloner">
+    <img class="pink_ballon" src="../../public/elementer/bla_ballon.png" alt="gul_hund">
+    <img class="gul_hund" src="../../public/elementer/gul_hund.png" alt="gul_hund">
+    <img class="pink_stjerne" src="../../public/elementer/pink_stjerne.png" alt="pink_stjerne">
+    <img class="bla_hund" src="../../public/elementer/bla_hund.png" alt="bla_hund">
+    <img class="gron_ballon" src="../../public/elementer/gron_ballon.png" alt="gron_ballon">
+    <img class="bla_stjerne" src="../../public/elementer/bla_stjerne.png" alt="bla_stjerne">
+    <img class="gron_stjerne" src="../../public/elementer/gron_stjerne.png" alt="gron_stjerne">
+    <img class="gron_hund" src="../../public/elementer/gron_hund.png" alt="gron_hund">
+    <img class="gul_ballon" src="../../public/elementer/gul_ballon.png" alt="gul_ballon">
+    <img class="lyse_gron_stjerne" src="../../public/elementer/lyse_gron_stjerne.png" alt="lyse_gron_stjerne">
+    <img class="pink_hund" src="../../public/elementer/pink_hund.png" alt="pink_hund">
+    <img class="bla_ballon" src="../../public/elementer/bla_ballon.png" alt="bla_ballon">
+  </div>
+</section>
 
 
-  <style>
-    
+ <style>
+  .magiens_venner_h1 {
+  text-align: center;
+  margin-top: 100px;
+  transform: scale(0.7);
+}
 
-    .herosection_balloner{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-   
-  </style>
+.herosection_balloner {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px; /* Tilføj lidt afstand mellem elementerne */
+}
+
+.pink_ballon {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-top: -150px;
+  transform: scale(0.8);
+}
+
+.gul_hund {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  transform: scale(2);
+  margin-top: -200px;
+}
+
+.pink_stjerne {
+  grid-column: 7 / 8;
+  grid-row: 1 / 2;
+  transform: scale(1.5);
+  margin-top: 20px;
+}
+
+.bla_hund {
+  grid-column: 6 / 8;
+  grid-row: 3 / 4;
+}
+
+.gron_ballon {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+  margin-top: -200px;
+  margin-left: 100px;
+}
+
+.bla_stjerne {
+  grid-column: 7 / 9;
+  grid-row: 2 / 3;
+}
+
+.gron_stjerne {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  
+}
+
+.gron_hund {
+  grid-column: 4 / 6;
+  grid-row: 2 / 3;
+}
+
+.gul_ballon {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+.lyse_gron_stjerne {
+  grid-column: 8 / 9;
+  grid-row: 4 / 5;
+}
+
+.pink_hund {
+  grid-column: 2 / 4;
+  grid-row: 4 / 6;
+}
+
+.bla_ballon {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  padding-left: 100px;
+  transform: scale(3);
+}
+
+
+
+
+
+
+
+ </style>
