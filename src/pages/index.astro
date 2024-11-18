@@ -1,20 +1,21 @@
 ---
-import "../pages/layouts/Mainlayout.astro"
-import Herosection from '../komponenter/Herosection.astro';
+import "../pages/layouts/Mainlayout.astro";
+import Herosection from "../komponenter/Herosection.astro";
+import Mainlayout from "../pages/layouts/Mainlayout.astro";
+import Tryllelasse from "../komponenter/Tryllelasse.astro";
 ---
 
-
-
-	<Herosection />
-
-
+<Mainlayout>
+  <Herosection />
+  <Tryllelasse />
+</Mainlayout>
 
 <style>
-	h2{
-		font-size: var(--Primær-H2-Size);
-	}
+  h2 {
+    font-size: var(--Primær-H2-Size);
+  }
 
-	p{
-		font-size: var(--Primær-Brødtekst-Size);
-	}
+  p {
+    font-size: var(--Primær-Brødtekst-Size);
+  }
 </style>
