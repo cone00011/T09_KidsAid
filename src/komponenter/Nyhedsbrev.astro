@@ -4,7 +4,7 @@
     <div class="container">
       <h2>NYHEDSBREV</h2>
       <br />
-      <h3>“Udfyld formularen og modtag de seneste nyheder fra KidsAid”</h3>
+      <h3>Udfyld formularen og modtag de seneste nyheder fra KidsAid</h3>
       <form>
         <input type="email" placeholder="E-mail*" required />
         <button type="submit">Tilmeld</button>
@@ -17,82 +17,80 @@
 
 
 <style>
-.nyhedsbrev{
+.nyhedsbrev {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
 }
 
-  .container {
-    text-align: center;
-    max-width: 400px;
-    position: relative;
-    background: white;
-    padding: 20px;
-    
-  }
+.container {
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  background: white;
+  padding: 20px;
+}
 
-  h2 {
-    font-size: 70px;
-    margin-bottom: 10px;
-  }
+h2 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
 
-  h3 {
-    font-size: 30px;
-    font-weight: normal;
-    margin-bottom: 20px;
-  }
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
 
-  form button {
-    padding: 10px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+form button {
+  padding: 10px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid black; 
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s; 
+}
 
-  form button:hover {
-    background-color: #005bb5;
-  }
+form button:hover {
+  background-color: black; 
+  color: white; 
+  border-color: white; 
+}
 
-  /* Ballonhund styling */
-  .gronhund,
-  .pinkhund {
-    position: absolute;
-    width: 100px;
-  }
+/* Ballonhund styling */
+.gron_hund,
+.pink_hund {
+  position: absolute;
+  width: 300px; /* Gør hundene større */
+  z-index: -1; /* Sørger for, at de ikke dækker andre elementer */
+}
 
-  .gronhund {
-    top: 10%;
-    left: -120px;
-  }
+.gron_hund {
+  transform: scaleX(-1); 
+  top: -80px;
+  left: -400px; /* Juster venstre placering */
+}
 
-  .pinkhund {
-    top: 10%;
-    right: -120px;
-  }
+.pink_hund {
+  top: 200px;
+  right: -400px; /* Juster højre placering */
+}
 
-  @media (max-width: 768px) {
-    .gronhund {
-      left: -80px;
-    }
 
-    .pinkhund {
-      right: -80px;
-    }
-  }
 </style>
