@@ -1,6 +1,6 @@
 <section>
   <div class="magiens_venner_h1">
-    <img src="../../public/elementer/magiens_venner.png" alt="magiensvenner">
+    <img id="parallax-image" src="../../public/elementer/magiens_venner.png" alt="magiensvenner">
   </div>
 
   <div class="herosection_balloner">
@@ -19,20 +19,31 @@
   </div>
 </section>
 
-
  <style>
+  
   .magiens_venner_h1 {
-  text-align: center;
-  margin-top: 100px;
-  transform: scale(0.7);
-}
+    position: relative;
+    z-index: 1; 
+  }
 
-.herosection_balloner {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px; /* Tilføj lidt afstand mellem elementerne */
-}
+  #parallax-image {
+    position: fixed; 
+    top: var(--parallax-offset, 0); 
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    z-index: 0; 
+    margin-top: 50px;
+  }
+
+  .herosection_balloner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 300px; 
+  }
 
 .pink_ballon {
   grid-column: 1 / 2;
@@ -104,11 +115,20 @@
   padding-left: 100px;
   transform: scale(3);
 }
-
-
-
-
-
-
-
  </style>
+
+ <script>
+// Variabel til at kontrollere offset
+let parallaxOffset = 0;
+
+// Opdater CSS-variablen baseret på scroll
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  
+  // Parallax-effekt - juster multiplikatoren for hastighed
+  parallaxOffset = scrollY * 0.4;
+
+  // Sæt den dynamiske værdi via CSS-variabel
+  document.documentElement.style.setProperty('--parallax-offset', `${parallaxOffset}px`);
+});
+ </script>
