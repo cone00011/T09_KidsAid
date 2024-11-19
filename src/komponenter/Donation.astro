@@ -40,27 +40,38 @@
 
     .overskrift {
 
-        grid-column: span 2; 
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 2rem; 
+    grid-column: span 2; 
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+
+
     }
     .donation_grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem;
-        border-radius: 10px;
-        text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrér indholdet horisontalt */
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center; /* Centrér teksten inde i grid-elementet */
+    max-width: 50ch;
+    margin: 0 auto;
+
     }
 
     .donation_container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem; 
-        text-align: center;
-        position: relative;
-        padding: 2rem;
+        
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 0.2rem; /* Afstand mellem kolonner og rækker */
+    position: relative;
+    padding: 1rem;
+    max-width: 1200px; /* Begræns layoutets bredde */
+    margin: 0 auto; 
+    text-align: center;
+        
     }
 
     .balloner_donation {
@@ -73,22 +84,22 @@
     .gron_stjerne {
     top: -120px;
     left: 60px;
-    width: 20%;
+    width: 140px;
 
     }
 
     .blå_stjerne {
     top: 220px;
     right: 5px;
-    width: 20%;
+    width: 140px;
 
     }
 
     .blå_ballon {
-    bottom: -170px;
+    bottom: -200px;
     right: 80%;
     transform: translateX(-50%);
-    width: 15%; 
+    width: 120px; 
     }
 
     .flyvende {
