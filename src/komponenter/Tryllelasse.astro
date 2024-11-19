@@ -1,4 +1,4 @@
-<section>
+<section class="infotekst">
   <div class="tryllelasse">
     <h2>
       “TRYLLER SMIL FREM <br />
@@ -16,6 +16,8 @@
       øjeblikke fyldt med smil og glæde i en ellers udfordrende tid. At se børnenes
       ansigter lyse op og give dem muligheden for at glemme deres sygdomme, selvom
       det blot er et kort øjeblik, er min største belønning.
+      <br />
+      <br />
     </p>
 
     <p>- Trylle Lasse</p>
@@ -34,10 +36,34 @@
     </div>
   </div>
 
+</section>
+
   <style>
-    .tryllelasse {
-      text-align: center;
-    }
+   .infotekst {
+    display: flex;
+    justify-content: center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+    height: 100vh; /* Brug hele vindueshøjden */
+    margin: 0;
+    gap: 20px; /* Afstand mellem elementer */
+}
+
+/* Teksten */
+
+h2 {
+    text-align: center; 
+    max-width: 60ch; 
+    font-size: 70px;
+    padding-bottom: 50px;
+}
+p {
+    text-align: left; 
+    max-width: 60ch; 
+    font-size: 20px;
+}
+
+
+
 
     .balloner {
       display: flex;
@@ -48,16 +74,21 @@
 
     .gron_ballon {
       position: absolute;
-      left: -60px;
+      left: -300px;
       width: 100px;
       height: auto;
+      transform: scale(1.5);
     }
 
     .gul_ballon {
       position: absolute;
-      right: -60px;
+      right: -300px;
       width: 100px;
       height: auto;
+      transform: scale(2);
+      margin-top: -600px;
     }
+
+
   </style>
-</section>
+
