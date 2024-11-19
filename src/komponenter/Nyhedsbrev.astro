@@ -1,25 +1,25 @@
 
 
-<section>
+<section class="nyhedsbrev">
     <div class="container">
       <h2>NYHEDSBREV</h2>
       <br />
       <h3>“Udfyld formularen og modtag de seneste nyheder fra KidsAid”</h3>
       <form>
         <input type="email" placeholder="E-mail*" required />
-        <input type="submit" placeholder="Fornavn*" required />
-        <input type="submit" placeholder="Efternavn*" required />
         <button type="submit">Tilmeld</button>
       </form>
 
-      <img src="/public/img/gron_hund.png" alt="Gronhund" class="gronhund" />
-      <img src="/public/img/pink_hund.png" alt="pinkhund" class="pinkhund" />
+      <img class="gron_hund" src="../../public/elementer/gron_hund.png" alt="gron_hund">
+      <img class="pink_hund" src="../../public/elementer/pink_hund.png" alt="pink_hund">
     </div>
   </section>
 
 
 <style>
-
+.nyhedsbrev{
+  align-items: center;
+}
 
   .container {
     text-align: center;
@@ -27,17 +27,16 @@
     position: relative;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 70px;
     margin-bottom: 10px;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 30px;
     font-weight: normal;
     margin-bottom: 20px;
   }
