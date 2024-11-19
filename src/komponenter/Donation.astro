@@ -1,9 +1,6 @@
 <section class="donation_container">
-
-<div class="donation_grid">
-    <div>
-    <h2>“Støt de magiske øjeblikke”</h2>
-    </div>
+    <h2 class="overskrift">“Støt de magiske øjeblikke”</h2>
+    
 
     <div class="donation_grid">
         <h3>KidsAid Family</h3>
@@ -31,9 +28,9 @@
     
 
     <div class="balloner_donation">
-<img class="gron_stjerne" src="../../public/elementer/gron_stjerne.png" alt="gron_stjerne">
-<img class="blå_stjerne" src="../../public/elementer/bla_stjerne.png" alt="blå_stjerne">
-<img class="blå_ballon" src="../../public/elementer/bla_ballon.png" alt="blå_ballon">
+<img class="gron_stjerne flyvende" src="../../public/elementer/gron_stjerne.png" alt="gron_stjerne">
+<img class="blå_stjerne flyvende" src="../../public/elementer/bla_stjerne.png" alt="blå_stjerne">
+<img class="blå_ballon flyvende" src="../../public/elementer/bla_ballon.png" alt="blå_ballon">
     </div>
 
 
@@ -41,49 +38,74 @@
 
 <style>
 
+    .overskrift {
 
+        grid-column: span 2; 
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem; 
+    }
     .donation_grid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 10px;
+        text-align: left;
     }
 
     .donation_container {
         display: grid;
+
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem; 
         text-align: left;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem; 
+        text-align: center;
+        position: relative;
+
         padding: 2rem;
     }
 
     .balloner_donation {
     width: 50px;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 
     }
 
     .gron_stjerne {
-    top: -30px;
-    left: -50px;
-    width: 100px; /* Justér størrelse */
+    top: -120px;
+    left: 60px;
+    width: 20%;
 
     }
 
     .blå_stjerne {
+
     top: -30px;
     right: -60px;
     width: 100px;
 
+    top: 220px;
+    right: 5px;
+    width: 20%;
+
+
     }
 
     .blå_ballon {
-    bottom: -50px;
-    left: 50%;
+    bottom: -170px;
+    right: 80%;
     transform: translateX(-50%);
-    width: 80px; /* Justér størrelse */
+    width: 15%; 
+    }
+
+    .flyvende {
+        position: absolute;
+        z-index: 0; 
     }
 
     
