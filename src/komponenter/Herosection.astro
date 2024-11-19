@@ -126,7 +126,7 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   
   // Parallax-effekt - juster multiplikatoren for hastighed
-  parallaxOffset = scrollY * 0.4;
+  parallaxOffset = scrollY * 0.35;
 
   // Sæt den dynamiske værdi via CSS-variabel
   document.documentElement.style.setProperty('--parallax-offset', `${parallaxOffset}px`);
