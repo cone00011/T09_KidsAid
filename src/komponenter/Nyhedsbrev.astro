@@ -1,0 +1,33 @@
+---
+import Mainlayout from "../pages/layouts/Mainlayout.astro";
+---
+
+<head>
+  <body>
+    <div class="container">
+      <h2>NYHEDSBREV</h2>
+      <br />
+      <h3>“Udfyld formularen og modtag de seneste nyheder fra KidsAid”</h3>
+      <form>
+        <input type="email" placeholder="E-mail*" required />
+        <input type="submit" placeholder="Fornavn*" required />
+        <input type="submit" placeholder="Efternavn*" required />
+        <button type="submit">Tilmeld</button>
+      </form>
+
+      <img src="/public/img/gron_hund.png" alt="Gronhund" class="gronhund" />
+      <img src="/public/img/pink_hund.png" alt="pinkhund" class="pinkhund" />
+    </div>
+  </body>
+</head>
+
+<style>
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    text-align: center;
+    max-width: 400px;
+    position: relative;
+  }
+</style>
