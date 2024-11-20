@@ -1,0 +1,35 @@
+<section>
+    <section class="sticky-video">
+        <video autoplay loop muted>
+          <source src="../../public/video/walking_dog.mp4" type="video/mp4" />
+        </video>
+    </section>
+</section>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .sticky-video {
+      position: relative;
+      height: 200vh; /* Sektionen fylder dobbelt så meget som viewport-højden */
+      margin-top: -200px;
+    }
+
+    .sticky-video video {
+      position: sticky;
+      top: 0;
+      width: 100vw; /* Fylder hele bredden */
+      height: 100vh; /* Fylder hele højden */
+      object-fit: cover; /* Dækker skærmen */
+    }
+</style>
+
+
+
+
+
+
