@@ -5,6 +5,10 @@
   list-style-type: "";
 }
 
+body {
+  background-color: #FFFEFD; 
+}
+
 h2 {
   font-family: var(--Primær-H2-Font);
 }
