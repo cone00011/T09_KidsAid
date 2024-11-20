@@ -1,0 +1,90 @@
+<section>
+
+    <img class="pink_stjerne" src="../../public/elementer/pink_stjerne.png" alt="pink_stjerne">
+    <img class="gron_stjerne" src="../../public/elementer/gron_stjerne.png" alt="gron_stjerne">
+
+    <h2>SÅ STOR EN FORSKEL GJORDE KIDSAID I 2023</h2>
+
+    <div class="data_tekst">
+        <div>
+            <h3>6000 børn</h3>
+            <p>Hver måned oplever 6.000 børn, søskende og forældre glæden ved KidsAids arbejde. Med aktiviteter og oplevelser både på og udenfor hospitalerne giver vi dem et tiltrængt pusterum og øjeblikke.</p>
+        </div>
+
+        <div>
+            <h3>8 mio. kr.</h3>
+            <p>I 2023 brugte KidsAid 8 millioner kroner på at skabe håb og smil for syge børn og deres familier. Fra magiske oplevelser til vigtig psykologisk støtte – hver krone gik til at gøre deres hverdag lidt lettere.</p>
+        </div>
+    </div>
+
+    <img class="bla_stjerne" src="../../public/elementer/bla_stjerne.png" alt="bla_stjerne">
+
+</section>
+
+<style>
+/* Centrering af h2 */
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+/* Begrænsning af tekstbredde */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 40ch; /* Maksimal bredde på 60 tegn */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Styling af h3 */
+h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* Grid-centrering */
+.data_tekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Justering af stjerner */
+.pink_stjerne, .gron_stjerne, .bla_stjerne {
+    position: absolute; /* Gør dem uafhængige af tekst */
+}
+
+.pink_stjerne {
+    top: -170%;
+    left: -550px;
+    transform: scale(0.15); 
+}
+
+.gron_stjerne {
+    top: -800px;
+    left: 500px;
+    transform: scale(0.12); 
+}
+
+.bla_stjerne {
+    top: -105%;
+    left: -2%;
+    transform: scale(0.1); 
+}
+
+/* Sektionstilpasning */
+section {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+}
+</style>
