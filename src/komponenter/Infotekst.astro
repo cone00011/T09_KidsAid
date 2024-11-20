@@ -1,5 +1,4 @@
 <section class="infotekst">
-
     <div class="balloner">
         <img class="gron_hund" src="../../public/elementer/gron_hund.png" alt="gron_hund">
     </div>
@@ -15,22 +14,19 @@
     <div class="balloner">
         <img class="pink_hund" src="../../public/elementer/pink_hund.png" alt="pink_hund">
     </div>
-
 </section>
 
 <style>
-
 .infotekst {
     display: flex;
-    justify-content: center; /* Horisontal centrering */
-    align-items: center; /* Vertikal centrering */
-    height: 100vh; /* Brug hele vindueshøjden */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    gap: 20px; /* Afstand mellem elementer */
+    gap: 20px;
 }
 
 /* Teksten */
-
 h2 {
     text-align: center; 
     max-width: 60ch; 
@@ -45,18 +41,59 @@ p {
 
 /* Balloner */
 .balloner img {
-    height: 250px; 
+    height: 150px; 
+    transition: height 0.3s ease; /* Tilføjer en glidende effekt */
 }
-
 
 .gron_hund {
     transform: scaleX(-1); 
     margin-top: -300px;
 }
 
-
 .pink_hund {
     left: 100px;
     margin-top: 370px;
 }
 </style>
+
+
+<script>
+  // Startstørrelse og maks-størrelse
+const minHeight = 150;
+const maxHeight = 280; // Du kan justere denne, hvis de skal blive større
+let currentHeight = minHeight; // Holder styr på den nuværende størrelse
+
+// Funktion til at opdatere balloner ved scroll
+function growBalloons() {
+    const balloonImages = document.querySelectorAll(".balloner img");
+
+    // Øg højden ved scroll, men begræns til maxHeight
+    if (currentHeight < maxHeight) {
+        currentHeight += 1.5; // Juster, hvor meget de skal vokse pr. scroll
+        balloonImages.forEach(img => {
+            img.style.height = `${currentHeight}px`;
+        });
+    }
+}
+
+// Sørg for kun at aktivere væksten, når sektionen er synlig
+const infotekstSection = document.querySelector(".infotekst");
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Aktivér scroll-begivenhed kun når sektionen er synlig
+                window.addEventListener("scroll", growBalloons);
+            } else {
+                // Stop væksten, når sektionen ikke længere er synlig
+                window.removeEventListener("scroll", growBalloons);
+            }
+        });
+    },
+    { threshold: 0.1 } // Sektionen betragtes som synlig, når 10% er på skærmen
+);
+
+// Overvåg sektionen
+observer.observe(infotekstSection);
+
+</script>
