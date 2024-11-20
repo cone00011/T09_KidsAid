@@ -1,4 +1,4 @@
- <section>
+ <section class="sticky-photo">
  <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="../../public/img/tryllekunstner_ballon.webp" style="width:100%" alt="tryllekunstner_ballon">
@@ -89,5 +89,22 @@ html, body {
   z-index: 10; /* Sørger for, at hunden ligger oven på billedet */
   padding-right: 20px;
 }
+
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+  
+  
+    .sticky-photo {
+      position: sticky;
+      top: 0;
+      width: 100vw; /* Fylder hele bredden */
+      height: 100vh; /* Fylder hele højden */
+      object-fit: cover; /* Dækker skærmen */
+    }
+
 </style>
 
